@@ -2,10 +2,12 @@ import React from 'react';
 
 
 function Resume(){
-  return
-  <>
+  return(
   <h1>Resume page</h1>
-  </>
+
+    )
+
+
 
 
 }

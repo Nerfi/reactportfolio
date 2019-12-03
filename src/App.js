@@ -9,20 +9,20 @@ function App() {
     <>
     <div className="demo-big-content">
     <Layout>
-        <Header title="Title" scroll>
+        <Header className="header-color" title="Juan Dev" scroll>
             <Navigation>
-                <a href="#">Link</a>
-                <a href="#">Link</a>
-                <a href="#">Link</a>
-                <a href="#">Link</a>
+                <Link to="/Resume">Resume</Link>
+                <Link to="/Projects">Projects</Link>
+                <Link to="/Contact">Contact</Link>
+
             </Navigation>
         </Header>
-        <Drawer title="Title">
+        <Drawer title="Tit">
             <Navigation>
-                <a href="#">Link</a>
-                <a href="#">Link</a>
-                <a href="#">Link</a>
-                <a href="#">Link</a>
+                <Link to="/Resume">Resume</Link>
+                <Link to="/Projects">Projects</Link>
+                <Link to="/Contact">Contact</Link>
+
             </Navigation>
         </Drawer>
         <Content>
