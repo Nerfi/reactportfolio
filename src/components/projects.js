@@ -33,16 +33,16 @@ import {useState, useEffect } from 'react';
 
         } else if(activeTab === 1) {
           return(
-          <div><h1>This is Angular</h1></div>
+          <div><h1>This is React</h1></div>
           )
         } else if (activeTab === 2) {
           return(
-          <div><h1>This is Angular</h1></div>
+          <div><h1>This is Rails</h1></div>
 
           )
         } else if (activeTab === 3) {
           return(
-           <div><h1>This is Rails</h1></div>
+           <div><h1>This is Python</h1></div>
 
           )
         }
@@ -52,11 +52,12 @@ import {useState, useEffect } from 'react';
 
   return(
        <div>
+
         <Tabs activeTab={activeTab} onChange={(tabId) => setActiveTab({ activeTab: tabId })} ripple>
+          <Tab>Ruby</Tab>
           <Tab>React</Tab>
-          <Tab>Angular</Tab>
-          <Tab>VueJS</Tab>
-          <Tab>MongoDB</Tab>
+          <Tab>Rails</Tab>
+          <Tab>Python</Tab>
         </Tabs>
           <Grid>
             <Cell col={12}>
