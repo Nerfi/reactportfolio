@@ -1,17 +1,18 @@
 import React from 'react';
 import {Tabs, Tab, Grid, Cell,Card,CardTitle,CardText,CardActions,Button,CardMenu,IconButton} from 'react-mdl';
-import {useState, useEffect } from 'react';
+import { useState, useEffect } from 'react';
 
  export const  Projects = () => {
 
-      const [activeTab, setActiveTab ] = useState(0);
+      const [activeTab, setActiveTab] = useState(0);
 
-      const toggleCategories = () => {
+         function toggleCategories() { // why is not working ?
+        // error message :  Parsing error: Unexpected token, expected ";"
 
         if (activeTab === 0){
 
           return(
-             <div className="Projects-card">
+         <div className="Projects-card">
 
            <Card shadow={0} style={{width: '512px', margin: 'auto'}}>
               <CardTitle style={{color: '#fff', height: '176px', background: 'url(http://www.getmdl.io/assets/demos/welcome_card.jpg) center / cover'}}>Welcome</CardTitle>
