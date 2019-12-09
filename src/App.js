@@ -9,9 +9,9 @@ function App() {
     <>
     <div className="demo-big-content">
     <Layout>
-        <Header className="header-color" title="Juan Dev" scroll>
+        <Header className="header-color" title={<Link style={{textDecoration: 'none', color: 'white'}} to="/"> MyPortfolio </Link>} scroll>
             <Navigation>
-                <Link to="/Resume">Resume</Link>
+
                 <Link to="/Projects">Projects</Link>
                 <Link to="/Contact">Contact</Link>
 
@@ -19,7 +19,7 @@ function App() {
         </Header>
         <Drawer title="Tit">
             <Navigation>
-                <Link to="/Resume">Resume</Link>
+
                 <Link to="/Projects">Projects</Link>
                 <Link to="/Contact">Contact</Link>
 

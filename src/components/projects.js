@@ -6,8 +6,7 @@ import { useState } from 'react';
 
       const [activeTab, setActiveTab] = useState(0);
 
-         function toggleCategories() { // why is not working ?
-        // error message :  Parsing error: Unexpected token, expected ";"
+         function toggleCategories() {
 
         if (activeTab === 0){
 
