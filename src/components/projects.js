@@ -1,8 +1,8 @@
 import React from 'react';
 import {Tabs, Tab, Grid, Cell,Card,CardTitle,CardText,CardActions,Button,CardMenu,IconButton} from 'react-mdl';
-import { useState, useEffect } from 'react';
+import { useState } from 'react';
 
- export const  Projects = () => {
+  const  Projects = () => {
 
       const [activeTab, setActiveTab] = useState(0);
 
@@ -12,21 +12,21 @@ import { useState, useEffect } from 'react';
         if (activeTab === 0){
 
           return(
-         <div className="Projects-card">
+           <div className="Projects-card">
 
-           <Card shadow={0} style={{width: '512px', margin: 'auto'}}>
-              <CardTitle style={{color: '#fff', height: '176px', background: 'url(http://www.getmdl.io/assets/demos/welcome_card.jpg) center / cover'}}>Welcome</CardTitle>
-              <CardText>
-                  Lorem ipsum dolor sit amet, consectetur adipiscing elit.
-                  Mauris sagittis pellentesque lacus eleifend lacinia...
-              </CardText>
-              <CardActions border>
-                  <Button colored>Get Started</Button>
-              </CardActions>
-              <CardMenu style={{color: '#fff'}}>
-                  <IconButton name="share" />
-              </CardMenu>
-          </Card>
+             <Card shadow={0} style={{width: '512px', margin: 'auto'}}>
+                <CardTitle style={{color: '#fff', height: '176px', background: 'url(https://external-content.duckduckgo.com/iu/?u=https%3A%2F%2Fwww.sitepoint.com%2Fwp-content%2Fthemes%2Fsitepoint%2Fassets%2Fimages%2Ficon.ruby.png&f=1&nofb=1) center / cover'}}>Welcome</CardTitle>
+                <CardText>
+                    Lorem ipsum dolor sit amet, consectetur adipiscing elit.
+                    Mauris sagittis pellentesque lacus eleifend lacinia...
+                </CardText>
+                <CardActions border>
+                    <Button colored>Get Started</Button>
+                </CardActions>
+                <CardMenu style={{color: '#fff'}}>
+                    <IconButton name="share" />
+                </CardMenu>
+            </Card>
 
       </div>
 
@@ -34,16 +34,60 @@ import { useState, useEffect } from 'react';
 
         } else if(activeTab === 1) {
           return(
-          <div><h1>This is React</h1></div>
+
+          <div className="Projects-card">
+          <Card shadow={0} style={{width: '512px', margin: 'auto'}}>
+                <CardTitle style={{color: '#fff', height: '176px', background: 'url(https://external-content.duckduckgo.com/iu/?u=https%3A%2F%2Fupload.wikimedia.org%2Fwikipedia%2Fcommons%2Fthumb%2Fa%2Fa7%2FReact-icon.svg%2F640px-React-icon.svg.png&f=1&nofb=1) center / cover'}}>Welcome</CardTitle>
+                <CardText>
+                    Lorem ipsum dolor sit amet, consectetur adipiscing elit.
+                    Mauris sagittis pellentesque lacus eleifend lacinia...
+                </CardText>
+                <CardActions border>
+                    <Button colored>Get Started</Button>
+                </CardActions>
+                <CardMenu style={{color: '#fff'}}>
+                    <IconButton name="share" />
+                </CardMenu>
+            </Card>
+          </div>
           )
         } else if (activeTab === 2) {
           return(
-          <div><h1>This is Rails</h1></div>
+          <div className="Projects-card">
+          <Card shadow={0} style={{width: '512px', margin: 'auto'}}>
+                <CardTitle style={{color: '#fff', height: '176px', background: 'url(https://external-content.duckduckgo.com/iu/?u=https%3A%2F%2Fcdnp0.stackassets.com%2Fa83017bbc3c2d2da0874e0dd4a04bf1dedc6f962%2Fstore%2F71d2ebdab71bb55e3ec09e8e61cce8ff95e2c73932770a94608ee58419d2%2F1323_RubyonRailsRookietoRockstar_MF.jpg&f=1&nofb=1) center / cover'}}>Welcome</CardTitle>
+                <CardText>
+                    Lorem ipsum dolor sit amet, consectetur adipiscing elit.
+                    Mauris sagittis pellentesque lacus eleifend lacinia...
+                </CardText>
+                <CardActions border>
+                    <Button colored>Get Started</Button>
+                </CardActions>
+                <CardMenu style={{color: '#fff'}}>
+                    <IconButton name="share" />
+                </CardMenu>
+            </Card>
+
+          </div>
 
           )
         } else if (activeTab === 3) {
           return(
-           <div><h1>This is Python</h1></div>
+           <div className="Projects-card">
+            <Card shadow={0} style={{width: '512px', margin: 'auto'}}>
+                <CardTitle style={{color: '#fff', height: '176px', background: 'url(https://external-content.duckduckgo.com/iu/?u=https%3A%2F%2Fwww.ostechnix.com%2Fwp-content%2Fuploads%2F2018%2F02%2FPython.jpg&f=1&nofb=1) center / cover'}}>Welcome</CardTitle>
+                <CardText>
+                    Lorem ipsum dolor sit amet, consectetur adipiscing elit.
+                    Mauris sagittis pellentesque lacus eleifend lacinia...
+                </CardText>
+                <CardActions border>
+                    <Button colored>Get Started</Button>
+                </CardActions>
+                <CardMenu style={{color: '#fff'}}>
+                    <IconButton name="share" />
+                </CardMenu>
+            </Card>
+           </div>
 
           )
         }
@@ -54,7 +98,7 @@ import { useState, useEffect } from 'react';
   return(
        <div>
 
-        <Tabs activeTab={activeTab} onChange={(tabId) => setActiveTab({ activeTab: tabId })} ripple>
+        <Tabs activeTab={activeTab} onChange={(tabId) => setActiveTab(tabId)} ripple>
           <Tab>Ruby</Tab>
           <Tab>React</Tab>
           <Tab>Rails</Tab>
