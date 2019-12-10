@@ -103,3 +103,9 @@
   font-size: 45px;
   padding-right: 4rem;
 }
+ /*  Projects page */
+
+ .projects-grid {
+  display: inline-block;
+
+ }

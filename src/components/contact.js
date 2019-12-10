@@ -6,8 +6,6 @@ function Contact(){
 
     <div className="main-div">
         <Grid className="contact-grid">
-
-
            <Cell col={6}>
            <h2>Juan Paredes</h2>
            <img
@@ -24,8 +22,6 @@ function Contact(){
             </p>
 
            </Cell>
-
-
 
 
          <Cell col={6}>
