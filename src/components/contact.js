@@ -10,7 +10,7 @@ function Contact(){
            <h2>Juan Paredes</h2>
            <img
             src="https://cdn2.iconfinder.com/data/icons/avatar-2/512/Fred_man-512.png"
-           alt="avatr image"
+           alt="avatar"
            style={{height: '250px'}}
             />
             <p style={{ width: '75%', margin: 'auto', paddingTop: '2em', marginLeft: '-10px'}}>

@@ -20,7 +20,7 @@ function LandingPage(){
       <h1>Fullstack dev</h1>
 
       <hr />
-      <p>HTML/CSS/Boostrap/JS/React/Rails/RoR</p>
+      <p>HTML/CSS | Boostrap | JS | React | Rails | RoR</p>
 
       <div className="social-links">
 

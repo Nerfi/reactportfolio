@@ -16,6 +16,7 @@
   width: 100%;
   height: 100%;
 
+
 }
 
 
@@ -23,13 +24,14 @@
   height: 250px;
   padding-top: 5em;
 }
-
+  /* banner area */
 .banner-text {
   background-color: black;
   opacity: .8;
   width: 65%;
   margin: auto;
   border-radius: 10px;
+  font-family: 'Indie Flower', cursive;
 
 }
 
@@ -54,7 +56,7 @@
   padding: 1em;
 }
 
-
+/* social links */
 .social-links {
   display: flex;
   justify-content: space-around;
@@ -106,6 +108,21 @@
  /*  Projects page */
 
  .projects-grid {
-  display: inline-block;
+  display: inline-flex;
+  margin: 2.5em;
+  text-align: center;
 
  }
+
+.projects-grid h2 {
+  color: black;
+  font-family: 'Lobster', cursive;
+}
+
+
+/* navbar,is within App.js */
+
+.demo-big-content {
+  font-family: 'Indie Flower', cursive;
+
+}
