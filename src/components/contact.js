@@ -6,22 +6,26 @@ function Contact(){
 
     <div className="main-div">
         <Grid className="contact-grid">
-         <Cell col={6}>
-         <h2>Juan Paredes</h2>
-         <img
-          src="https://cdn2.iconfinder.com/data/icons/avatar-2/512/Fred_man-512.png"
-         alt="avatr image"
-         style={{height: '250px'}}
-          />
-          <p style={{ width: '75%', margin: 'auto', paddingTop: '2em', marginLeft: '-10px'}}>
-            Ruby on Rails software developer with a clear vision.
-            My objective is not only to produce code, but to build awesome products in which I believe.
-            The part I love most about coding is the adrenaline you have when you solve a problem , coming up with fun ideas, implementing them, and seeing my idea work.
-            Also have a big interest in all related with A.I, now looking at working as a full-stack developer as it fits all of my career requirements: challenging work,
-            working with a team and having an impact
-          </p>
 
-         </Cell>
+
+           <Cell col={6}>
+           <h2>Juan Paredes</h2>
+           <img
+            src="https://cdn2.iconfinder.com/data/icons/avatar-2/512/Fred_man-512.png"
+           alt="avatr image"
+           style={{height: '250px'}}
+            />
+            <p style={{ width: '75%', margin: 'auto', paddingTop: '2em', marginLeft: '-10px'}}>
+              Ruby on Rails software developer with a clear vision.
+              My objective is not only to produce code, but to build awesome products in which I believe.
+              The part I love most about coding is the adrenaline you have when you solve a problem , coming up with fun ideas, implementing them, and seeing my idea work.
+              Also have a big interest in all related with A.I, now looking at working as a full-stack developer as it fits all of my career requirements: challenging work,
+              working with a team and having an impact
+            </p>
+
+           </Cell>
+
+
 
 
          <Cell col={6}>
