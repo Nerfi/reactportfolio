@@ -3,16 +3,19 @@ import {Tabs, Tab, Grid, Cell,Card,CardTitle,CardText,CardActions,Button} from '
 import { useState } from 'react';
 import database from './database';
 
+
+
   const  Projects = () => {
 
       const [activeTab, setActiveTab] = useState(0);
 
        function toggleCategories() {
+
         return database[activeTab].map(project => {
           return(
                <div className="projects-grid">
 
-            <Card shadow={5} style={{minWidth: '450', margin: 'auto'}}>
+            <Card kwy={project.id} shadow={5} style={{minWidth: '450', margin: 'auto'}}>
                   <CardTitle style={{color: '#fff', height: '176px', background: project.image }}>{project.name}</CardTitle>
                   <CardText>
                      {project.description}
