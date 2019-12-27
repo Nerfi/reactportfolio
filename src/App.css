@@ -127,8 +127,8 @@
 
 }
 
-/* media grid  */
-@media only screen and (min-width: 768px) {
+/* media grid not working  */
+  @media only screen and (min-width: 768px) {
   .projects-grid {
     display: inline-flex;
     margin: 2.5em;
