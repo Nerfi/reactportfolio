@@ -4,7 +4,6 @@ import { useState } from 'react';
 import database from './database.json';
 
 
-
   const  Projects = () => {
 
       const [activeTab, setActiveTab] = useState(0);
