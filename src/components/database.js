@@ -59,24 +59,7 @@ let database = [
       name: 'Rails section project',
       description: "some Rails description to be honest"
     }
-  ],
-  [
-    {
-      image: 'url(https://external-content.duckduckgo.com/iu/?u=https%3A%2F%2Fwww.ostechnix.com%2Fwp-content%2Fuploads%2F2018%2F02%2FPython.jpg&f=1&nofb=1) center / cover',
-      name: 'Rails section project',
-      description: "some python description to be honest"
-    },
-    {
-      image: 'url(https://external-content.duckduckgo.com/iu/?u=https%3A%2F%2Fwww.ostechnix.com%2Fwp-content%2Fuploads%2F2018%2F02%2FPython.jpg&f=1&nofb=1) center / cover',
-      name: 'Rails section project',
-      description: "some python description to be honest"
-    },
-    {
-      image: 'url(https://external-content.duckduckgo.com/iu/?u=https%3A%2F%2Fwww.ostechnix.com%2Fwp-content%2Fuploads%2F2018%2F02%2FPython.jpg&f=1&nofb=1) center / cover',
-      name: 'Rails section project',
-      description: "some python description to be honest"
-    }
-    ]
+  ]
 ]
 
 export default database;

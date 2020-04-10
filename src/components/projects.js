@@ -45,7 +45,6 @@ import database from './database';
           <Tab>Ruby</Tab>
           <Tab>React</Tab>
           <Tab>Rails</Tab>
-          <Tab>Python</Tab>
         </Tabs>
           <Grid>
             <Cell col={12}>
