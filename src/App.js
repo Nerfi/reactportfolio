@@ -1,12 +1,12 @@
 import React from 'react';
 import './App.css';
 import { Link } from 'react-router-dom';
-import {Layout,Header,HeaderRow,Textfield,Navigation,Drawer,Content} from 'react-mdl';
+import {Layout,Header,Navigation,Drawer,Content} from 'react-mdl';
 import Main from './components/main';
 
 function App() {
   return (
-    <>
+    <div>
     <div className="demo-big-content">
     <Layout>
         <Header className="header-color" title={<Link style={{textDecoration: 'none', color: 'white'}} to="/"> MyPortfolio </Link>} scroll>
@@ -33,7 +33,7 @@ function App() {
 </div>
 
 
-    </>
+    </div>
      );
 }
 

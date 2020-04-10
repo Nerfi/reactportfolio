@@ -1,62 +1,45 @@
-import React from 'react';
-import {Tabs, Tab, Grid, Cell,Card,CardTitle,CardText,CardActions,Button} from 'react-mdl';
-import { useState } from 'react';
+import React,{useState} from 'react';
+import {Tabs, Tab, Grid, Cell} from 'react-mdl';
 import database from './database.json';
+import Cards from './Cards';
 
 
   const  Projects = () => {
-
-      const [activeTab, setActiveTab] = useState(0);
-
-       function toggleCategories() {
-
-        return database[activeTab].map(project => {
-          return(
-               <div className="projects-grid">
-
-            <Card kwy={project.id} shadow={5} style={{minWidth: '450', margin: 'auto'}}>
-                  <CardTitle style={{color: '#fff', height: '176px', background: project.image }}>{project.name}</CardTitle>
-                  <CardText>
-                     {project.description}
-                  </CardText>
-                  <CardActions border>
-                      <Button colored>
-                          <a href="https://github.com/mjachowdhury/myPortfolio">Github</a>
-                        </Button>
-
-                        <Button colored>Live Demo</Button>
-                  </CardActions>
-
-            </Card>
-
-       </div>
-            )
-        })
-
-
-      }
-
-
+    const [selectTab, setTab] = useState(0);
   return(
        <div>
 
-        <Tabs activeTab={activeTab} key={activeTab.id} onChange={(tabId) => setActiveTab(tabId)} ripple>
+        <Tabs activeTab={selectTab} key={selectTab.id} onChange={(tabId) => setTab(tabId)} ripple>
           <Tab>Ruby</Tab>
           <Tab>React</Tab>
           <Tab>Rails</Tab>
         </Tabs>
           <Grid>
             <Cell col={12}>
-              <div className="content">{toggleCategories()}</div>
+
+              {database[selectTab].map(project => {
+                console.log(project.id, 'here is the id')
+                return(
+
+                <div className="projects-grid">
+                  <Cards
+                  key={project.id}
+                  name={project.name}
+                  backgroundImg={project.image}
+                  description={project.description}
+
+                  />
+                </div>
+                );
+
+              })}
+
             </Cell>
           </Grid>
       </div>
 
 
     )
-
-
-
 
 }
 
