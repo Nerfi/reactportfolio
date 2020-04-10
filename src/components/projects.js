@@ -1,7 +1,7 @@
 import React from 'react';
 import {Tabs, Tab, Grid, Cell,Card,CardTitle,CardText,CardActions,Button} from 'react-mdl';
 import { useState } from 'react';
-import database from './database';
+import database from './database.json';
 
 
 
