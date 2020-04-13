@@ -8,15 +8,15 @@ import Contact from './contact';
 
 function Main() {
   return(
-      <Switch>
     <HashRouter basename="/">
+      <Switch>
 
       <Route exact path="/" component={LandingPage} />
       <Route exact path="/Projects" component={Projects} />
       <Route exact path="/Contact" component={Contact} />
 
-  </HashRouter>
     </Switch>
+  </HashRouter>
     )
 
 
